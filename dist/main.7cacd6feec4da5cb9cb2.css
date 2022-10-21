@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap);
+:root {
+    --background-color: #fafafa;
+    --white-color: #ffffff;
+    --orange-color: #e88c0e;
+    --light-grey-color: #aaaaaa;
+    --darker-grey-color: #808080;
+    --lighter-green-color: #11553b;
+    ;
+
+    --body-font: "Raleway", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+}
+
+main {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side__bar {
+    display: none;
+}
+
+.tray__section__header {
+    width: 100%;
+    height: 48px;
+    background-color: var(--orange-color);
+    margin-top: 1em;
+}
+
+.tray__section__title {
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.tray__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.tray__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tray__items__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tray__item__container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+    width: 340px;
+    height: 204px;
+    border-radius: 0.5em;
+    margin: 1em;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.tray__item__image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tray__item__image img {
+    width: 148px;
+    height: 132px;
+}
+
+.tray__item__details {
+    display: flex;
+    margin-left: 3.3em;
+    width: 274px;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.tray__item__name {
+    align-self: flex-end;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.button {
+    justify-self: flex-end;
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.button button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.button img {
+    width: 9.33px;
+    height: 12px;
+}
+
+.tray__item__count {
+    display: flex;
+    justify-self: flex-end;
+    gap: 24px;
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.tray__item__count button {
+    justify-self: flex-end;
+    border-radius: 0.25em;
+    background-color: var(--orange-color);
+    font-size: 20px;
+    color: var(--white-color);
+    border: none;
+    width: 32px;
+    height: 32px;
+}
+
+.tray__item__price {
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.tray__item__price p {
+    margin-left: -0.5em;
+}
+
+.note__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.note__container input {
+    width: 343px;
+    height: 88px;
+    background-color: var(--white-color);
+    border: solid 1px var(--light-grey-color);
+    border-radius: 0.5em;
+}
+
+.tray__summary__container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    width: 100%;
+    margin-top: 2.5em;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+    ;
+    padding: 1em;
+    height: max-content;
+    margin-bottom: 5em;
+
+}
+
+.tray__summary__container h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.tray__summary__item {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--darker-grey-color);
+    margin-bottom: 1em;
+
+}
+
+.summary__items__container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sub__total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.sub__total button {
+    margin-top: 1.5em;
+    width: 100%;
+    height: 48px;
+    color: var(--white-color);
+    background-color: var(--lighter-green-color);
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0.5em;
+    border: none;
+    margin-bottom: 2.62em;
+}
+
+.line {
+    border: solid 0.1px var(--lighter-green-color);
+    margin-bottom: 2.5em;
+}
+
+.tray__sub__total {
+    font-family: var(--body-font);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+
+}
